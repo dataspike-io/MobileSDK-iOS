@@ -68,12 +68,12 @@ Then drag DataspikeMobileSDK-iOS.xcframework into your Xcode project.
 	```swift
 	// Swift
 	let sdkConfig = try! DataspikeConfigBuilder()
-          .with(apiToken: "<#api_token#>")
-          .with(externalApplicantId: "<#applicant_identifier#>")
+          .with(token: "<#sdk_token#>")
+          .with(checks: [.passport, .selfie])
           .with(logLevel: .debug)
           .build()
 	```
-	Make sure to replace `api_token` with your api token. Find it [here](https://dash.dataspike.io/api).
+	Make sure to replace `sdk_token` with your sdk token. Find it [here](https://dash.dataspike.io/api).
 3. Instantiate DataspikeSDK
     ```swift
 	// Swift
@@ -109,7 +109,7 @@ If your app doesn’t already access the camera or photo library, we recommend u
 * "`<app name>` needs access to the camera to be able to take photos."
 * "`<app name>` needs access to your photo library for you to be able to attach images."
 
-**The permission alert for accessing the microphone/photo library will NOT appear unless users attempt to attach a voice note/photo while using Dataspike SDK.**
+**The permission alert for accessing the photo library will NOT appear unless users attempt to attach a photo while using Dataspike SDK.**
 	
 ## More
 
