@@ -49,7 +49,7 @@ Then drag DataspikeMobileSDK-iOS.xcframework into your Xcode project.
 
 ### Manually
 
-1. [Download the DataspikeMobileSDK-iOS](https://github.com/dataspike-io/MobileSDK-iOS/releases/download/1.0.0/DataspikeMobileSDK-iOS-XCFramework.zip)
+1. [Download the DataspikeMobileSDK-iOS](https://github.com/dataspike-io/MobileSDK-iOS/releases/download/1.0.1/DataspikeMobileSDK-iOS-XCFramework.zip)
 
 2. Extract it then drag & drop DataspikeMobileSDK-iOS.xcframework to your project's "Frameworks, Libraries, and Embedded Content" section under the "General" tab, and make sure that the "Copy items if needed" checkbox is checked
 
@@ -69,7 +69,7 @@ Then drag DataspikeMobileSDK-iOS.xcframework into your Xcode project.
 	// Swift
 	let sdkConfig = try! DataspikeConfigBuilder()
           .with(token: "<#sdk_token#>")
-          .with(checks: [.passport, .selfie])
+          .with(checks: [.passport, .liveness_photo])
           .with(logLevel: .debug)
           .build()
 	```
