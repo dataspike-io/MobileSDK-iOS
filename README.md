@@ -22,7 +22,7 @@ For more info, visit [DataSpike.io](https://docs.dataspike.io).
 To integrate Dataspike SDK into your Xcode project using [CocoaPods](https://cocoapods.org), add it to your `Podfile`:
 
 ```ruby
-pod 'DataspikeMobileSDK-iOS'
+pod 'DataspikeMobileSDK-iOS', :git => 'https://github.com/dataspike-io/MobileSDK-iOS.git'
 ```
 
 Then, run the following command:
@@ -60,7 +60,7 @@ Then drag DataspikeMobileSDK-iOS.xcframework into your Xcode project.
 
     ```swift
     // Swift
-    import DataspikeMobileSDK-iOS
+    import DataspikeMobileSDK_iOS
     ```
 
 2. Create the SDK configuration
@@ -70,7 +70,7 @@ Then drag DataspikeMobileSDK-iOS.xcframework into your Xcode project.
 	let sdkConfig = try! DataspikeConfigBuilder()
           .with(token: "<#sdk_token#>")
           .with(checks: [.passport, .liveness_photo])
-          .with(logLevel: .debug)
+          .with(logLevel: .info)
           .build()
 	```
 	Make sure to replace `sdk_token` with your sdk token. Find it [here](https://dash.dataspike.io/api).

@@ -16,7 +16,7 @@ let package = Package(
     targets: [
 	    .binaryTarget(
             name: "DataspikeMobileSDK-iOS",
-            url: "https://github.com/dataspike-io/MobileSDK-iOS/releases/download/1.0.1/DataspikeMobileSDK-iOS-XCFramework.zip",
-            checksum: "68600334ef5cf00322dbd731bf0ea58b88a4fe0ddc1fbbd2b3f4128abd75caa5")
+            url: "https://github.com/dataspike-io/MobileSDK-iOS/releases/download/1.0.2/DataspikeMobileSDK_iOS.zip",
+            checksum: "dd226a54b23da42b80f2e757121ef33f1d9813088856e855ff97143de46fdd57")
 	]
 )
