@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'DataspikeMobileSDK_iOS'
-  s.version               = '1.0.2'
+  s.version               = '1.0.3'
   s.summary               = 'Dataspike SDK for mobile apps. Learn more at https://www.dataspike.io'
   s.homepage              = 'https://www.dataspike.io'
   s.license               = { :type => 'Copyright', :text => 'Copyright 2023 Dataspike. All rights reserved.' }
