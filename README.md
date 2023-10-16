@@ -68,7 +68,7 @@ Then drag DataspikeMobileSDK-iOS.xcframework into your Xcode project.
 	```swift
 	// Swift
 	let sdkConfig = try! DataspikeConfigBuilder()
-          .with(token: "<#sdk_token#>")
+          .with(shortId: “<#short_id#>“)
           .with(checks: [.passport, .liveness_photo])
           .with(logLevel: .info)
           .build()
